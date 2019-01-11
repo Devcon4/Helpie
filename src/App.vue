@@ -2,7 +2,9 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/ripple">Ripple</router-link> | 
+      <router-link to="/cloud">Cloud</router-link> |  
+      <router-link to="/lifecycle">Lifecycle</router-link> 
     </div>
     <router-view/>
   </div>
@@ -25,5 +27,11 @@
       color: #42b983;
     }
   }
+}
+
+body, html {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
 }
 </style>
