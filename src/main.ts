@@ -4,8 +4,15 @@ import router from "./router";
 import store from "./store";
 import bootstrap from "./bootstrapHoudini";
 import './registerServiceWorker'
+import BootstrapLifecycle from './bootstrapLifecycle';
 
 bootstrap();
+
+const lifecycleMiddleware = new BootstrapLifecycle();
+
+lifecycleMiddleware.setData({
+  form: {}
+});
 
 Vue.config.productionTip = false;
 
